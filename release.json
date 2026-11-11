@@ -2,15 +2,85 @@
  "release": "1.0",
  "why": "DNSSEC Steward is one end-to-end workflow, not a set of independent modules. It ships only when the whole workflow is proven from a clean install, under regression testing.",
  "gates": [
-  {"n": 1, "title": "Failover drill", "pass": "Forced promotion and rejoin pass, with the time to signing measured", "done": false, "date": null, "evidence": null},
-  {"n": 2, "title": "Failback", "pass": "Signing returns home through the normal, receipt-based handoff", "done": false, "date": null, "evidence": null},
-  {"n": 3, "title": "Open items closed", "pass": "Build queue uniqueness rule aligned; the two readiness copies reconciled", "done": false, "date": null, "evidence": null},
-  {"n": 4, "title": "Steward installer", "pass": "A Steward builds from the image on a clean node, on either CPU architecture", "done": false, "date": null, "evidence": null},
-  {"n": 5, "title": "Site data separated from code", "pass": "Addresses, credentials and registrar settings are configuration; nothing of this cluster is in the repository", "done": false, "date": null, "evidence": null},
-  {"n": 6, "title": "Clean-room install", "pass": "A fresh lab cluster, built only from the repository, signs a test zone end to end", "done": false, "date": null, "evidence": null},
-  {"n": 7, "title": "Full regression on the lab", "pass": "Build, join, swap, unpublish, rollover, handoff, failover, rejoin and failback all pass in one run", "done": false, "date": null, "evidence": null},
-  {"n": 8, "title": "Documentation", "pass": "Install, operate, recover, and the architecture", "done": false, "date": null, "evidence": null},
-  {"n": 9, "title": "Security and licence review", "pass": "No secrets in the history, dependencies pinned, licence chosen", "done": false, "date": null, "evidence": null},
-  {"n": 10, "title": "Tag 1.0", "pass": "Signed release files with checksums", "done": false, "date": null, "evidence": null}
+  {
+   "n": 1,
+   "title": "Failover drill",
+   "pass": "Forced promotion and rejoin pass, with the time to signing measured",
+   "done": true,
+   "date": "11 Nov 2026",
+   "evidence": "Signing at the other site in 6 min 40 s; ns1 and ns3 rejoined"
+  },
+  {
+   "n": 2,
+   "title": "Failback",
+   "pass": "Signing returns home through the normal, receipt-based handoff",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 3,
+   "title": "Open items closed",
+   "pass": "Build queue uniqueness rule aligned; the two readiness copies reconciled",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 4,
+   "title": "Steward installer",
+   "pass": "A Steward builds from the image on a clean node, on either CPU architecture",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 5,
+   "title": "Site data separated from code",
+   "pass": "Addresses, credentials and registrar settings are configuration; nothing of this cluster is in the repository",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 6,
+   "title": "Clean-room install",
+   "pass": "A fresh lab cluster, built only from the repository, signs a test zone end to end",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 7,
+   "title": "Full regression on the lab",
+   "pass": "Build, join, swap, unpublish, rollover, handoff, failover, rejoin and failback all pass in one run",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 8,
+   "title": "Documentation",
+   "pass": "Install, operate, recover, and the architecture",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 9,
+   "title": "Security and licence review",
+   "pass": "No secrets in the history, dependencies pinned, licence chosen",
+   "done": false,
+   "date": null,
+   "evidence": null
+  },
+  {
+   "n": 10,
+   "title": "Tag 1.0",
+   "pass": "Signed release files with checksums",
+   "done": false,
+   "date": null,
+   "evidence": null
+  }
  ]
 }
