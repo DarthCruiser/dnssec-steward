@@ -6,9 +6,9 @@
    "n": 1,
    "title": "Failover drill",
    "pass": "Forced promotion and rejoin pass, with the time to signing measured",
-   "done": true,
-   "date": "11 Nov 2026",
-   "evidence": "Signing at the other site in 6 min 40 s; ns1 and ns3 rejoined"
+   "done": false,
+   "date": null,
+   "evidence": null
   },
   {
    "n": 2,
