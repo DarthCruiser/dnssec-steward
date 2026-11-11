@@ -6,9 +6,9 @@
    "n": 1,
    "title": "Failover drill",
    "pass": "Forced promotion and rejoin pass, with the time to signing measured",
-   "done": false,
-   "date": null,
-   "evidence": null
+   "done": true,
+   "date": "11 Nov 2026",
+   "evidence": "Forced promotion to signer2 committed in 34 s; a NOTIFY then brought ns1, ns2 and ns3 up to date in 1 s; ns1 and ns3 rejoined, ns3's own signing discarded; zone-reg.net validated throughout. Found and fixed on the way: standby user IDs, the signer profile, a leftover agent holding signer2's database, signer2's notification source, catalog thaw, and NOTIFY refused at forwarded ports since 4.22."
   },
   {
    "n": 2,
