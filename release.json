@@ -14,9 +14,9 @@
    "n": 2,
    "title": "Failback",
    "pass": "Signing returns home through the normal, receipt-based handoff",
-   "done": false,
-   "date": null,
-   "evidence": null
+   "done": true,
+   "date": "12 Nov 2026",
+   "evidence": "Signing returned to ns3 at epoch 10 through the receipt-based handoff; all four servers in step; ns2 now follows ns3 by notification (first time since 4.22). Found and fixed on the way: replica database installed beside a stale journal (recovered intact), the forced path's missing confirm step, the handover probe still using retired .195 and probing a same-site signer, a variable shadowing in 7.0's probe patch, the repoint check for four-member clusters, and secondaries lagging after the weekly serial tick."
   },
   {
    "n": 3,
