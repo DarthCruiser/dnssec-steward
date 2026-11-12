@@ -22,9 +22,9 @@
    "n": 3,
    "title": "Open items closed",
    "pass": "Build queue uniqueness rule aligned; the two readiness copies reconciled",
-   "done": false,
-   "date": null,
-   "evidence": null
+   "done": true,
+   "date": "12 Nov 2026",
+   "evidence": "Release 7.3: the build queue no longer treats a shared public address as a conflict, so two servers can be built at one site (hostname, LAN and installation addresses stay unique; 5 tests). The dead application copy of the readiness verdict was removed, and the live library copy, which every service loads, now has 11 tests. 42 tests passed on Steward; both Stewards proven to hold the same manifest."
   },
   {
    "n": 4,
