@@ -6,7 +6,7 @@ Unattended DNSSEC on disposable Linux VMs, run across geo-dispersed Mac minis.
 
 ## eng.quest
 
-A parent zone built for DNSSEC. eng.quest is signed by Steward, with its DS at .quest kept by the registrar's API. Steward users get `name.eng.quest`, and each child's DS is published automatically, by API or by CDS (RFC 7344, 8078, 9615), so no link in the chain needs a person.
+Free community names, built on DNSSEC. eng.quest is signed by Steward, with its DS at .quest placed through Porkbun's API. Names such as `name.eng.quest` are free, licensed on one condition: the name is signed with DNSSEC. Registrants implement it however they choose: with their own DNS provider, by pasting a DS record into the eng.quest interface, by managing DS records through the eng.quest API, or with the DNSSEC Steward service (£5 per five years). Every name is checked continually. A name whose chain of trust fails gets an email, then a reminder 24 hours later, and 24 hours after that it points to a page explaining that it is unavailable, until it is fixed. Details at [nic.eng.quest](https://nic.eng.quest/).
 
 ## Why there are no release files yet
 
@@ -21,7 +21,7 @@ So release 1.0 waits for the whole workflow to be proven from a clean install, u
 | 3 | Open items closed | Build queue uniqueness rule aligned; the two readiness copies reconciled |
 | 4 | Steward installer | A Steward builds from the image on a clean node, on either CPU architecture |
 | 5 | Site data separated from code | Addresses, credentials and registrar settings are configuration; nothing of this cluster is in the repository |
-| 6 | eng.quest live | eng.quest signed by Steward with its DS at .quest kept by Porkbun's API; a child name.eng.quest delegated, its DS published automatically by API and by CDS |
+| 6 | eng.quest live | eng.quest signed by Steward with its DS at .quest placed through Porkbun's API; a child name.eng.quest delegated and signed, with its DS placed through the eng.quest API, and the continual DNSSEC check running with its notices and suspension page |
 | 7 | Clean-room install | A fresh lab cluster, built only from the repository, signs lab.eng.quest end to end with a public chain of trust |
 | 8 | Full regression on the lab | Build, join, swap, unpublish, rollover, handoff, failover, rejoin and failback all pass in one run |
 | 9 | Documentation | Install, operate, recover, and the architecture |
