@@ -38,9 +38,9 @@
    "n": 5,
    "title": "Site data separated from code",
    "pass": "Addresses, credentials and registrar settings are configuration; nothing of this cluster is in the repository",
-   "done": false,
-   "date": null,
-   "evidence": null
+   "done": true,
+   "date": "13 Nov 2026",
+   "evidence": "Releases 7.4 to 7.5d: this installation's names, sites and probe zone are settings (site.json); the routing address is checked for shape; the cluster identifier comes from the manifest; roles are derived from the topology (the probe source resolves to ns2, as before); built-in fallbacks, the founding ns3 bootstrap, ns1's dead certificate files and two migration tools are removed; 201 old backup copies moved out of the code folders. A scan of every code file finds no site data: home 0 of 108 files, standby 0 of 5. Behaviour proven unchanged at each step; both Stewards hold the same manifest."
   },
   {
    "n": 6,
