@@ -45,7 +45,7 @@
   {
    "n": 6,
    "title": "eng.quest live",
-   "pass": "eng.quest signed by Steward with its DS at .quest kept by Porkbun's API; a child name.eng.quest delegated, its DS published automatically by API and by CDS",
+   "pass": "eng.quest signed by Steward with its DS at .quest placed through Porkbun's API; a child name.eng.quest delegated and signed, with its DS placed through the eng.quest API, and the continual DNSSEC check running with its notices and suspension page",
    "done": false,
    "date": null,
    "evidence": null
