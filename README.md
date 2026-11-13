@@ -6,7 +6,7 @@ Unattended DNSSEC on disposable Linux VMs, run across geo-dispersed Mac minis.
 
 ## eng.quest
 
-Free community names, built on DNSSEC. eng.quest is signed by Steward, with its DS at .quest placed through Porkbun's API. Names such as `name.eng.quest` are free, licensed on one condition: the name is signed with DNSSEC. Registrants implement it however they choose: with their own DNS provider, by pasting a DS record into the eng.quest interface, by managing DS records through the eng.quest API, or with the DNSSEC Steward service (£5 per five years). Every name is checked continually. A name whose chain of trust fails gets an email, then a reminder 24 hours later, and 24 hours after that it points to a page explaining that it is unavailable, until it is fixed. Details at [nic.eng.quest](https://nic.eng.quest/).
+Free community names, designed to ensure DNSSEC is implemented at all times. eng.quest itself is signed by Steward, with its DS at .quest placed through Porkbun's API. Every name such as `name.eng.quest` must be signed with DNSSEC, either by the registrant's own systems or by us with DNSSEC Steward. Registrants place their DS record by pasting it into the eng.quest interface or through the eng.quest API. Every name is checked continually: a name whose chain of trust fails gets an email, then a reminder 24 hours later, and 24 hours after that it points to a page explaining that it is unavailable, until it is fixed. Details at [nic.eng.quest](https://nic.eng.quest/).
 
 ## Why there are no release files yet
 
